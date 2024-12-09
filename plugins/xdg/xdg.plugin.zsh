@@ -30,10 +30,6 @@ export INPUTRC="${INPUTRC:-$XDG_CONFIG_HOME/readline/inputrc}"
 # screen
 export SCREENRC="${SCREENRC:-$XDG_CONFIG_HOME/screen/screenrc}"
 
-# tmux
-export TMUX_CONFIG="${TMUX_CONFIG:-$XDG_CONFIG_HOME/tmux/tmux.conf}"
-alias tmux="${aliases[tmux]:-tmux} -f \"\$TMUX_CONFIG\""
-
 # wget
 export WGETRC="${WGETRC:-$XDG_CONFIG_HOME/wget/wgetrc}"
 alias wget="${aliases[wget]:-wget} --hsts-file=\$XDG_CACHE_HOME/wget/wget-hsts"

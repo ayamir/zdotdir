@@ -20,9 +20,6 @@ alias vi=vim
 alias nv=nvim
 alias grep="${aliases[grep]:-grep} --exclude-dir={.git,.vscode}"
 
-# directories
-alias secrets="cd ${XDG_DATA_HOME:-~/.local/share}/secrets"
-
 # more ways to ls
 alias ll='ls -lh'
 alias la='ls -lAh'
@@ -30,10 +27,10 @@ alias lsa="ls -aG"
 alias ldot='ls -ld .*'
 
 # fix typos
-alias get=git
 alias quit='exit'
 alias cd..='cd ..'
 alias zz='exit'
+alias :q="exit"
 
 # tar
 alias tarls="tar -tvf"
@@ -45,10 +42,6 @@ alias datestamp="date '+%Y-%m-%d'"
 alias isodate="date +%Y-%m-%dT%H:%M:%S%z"
 alias utc="date -u +%Y-%m-%dT%H:%M:%SZ"
 alias unixepoch="date +%s"
-
-# find
-alias fd='find . -type d -name'
-alias ff='find . -type f -name'
 
 # homebrew
 #alias brewup="brew update && brew upgrade && brew cleanup"
@@ -68,7 +61,6 @@ alias urlencode='python3 -c "import sys, urllib.parse as ul; \
 
 # misc
 alias please=sudo
-alias zshrc='${EDITOR:-vim} "${ZDOTDIR:-$HOME}"/.zshrc'
 alias zbench='for i in {1..10}; do /usr/bin/time zsh -lic exit; done'
 alias cls="clear && printf '\e[3J'"
 
@@ -92,8 +84,11 @@ alias zdot='cd $ZDOTDIR'
 # java
 alias setjavahome="export JAVA_HOME=\`/usr/libexec/java_home\`"
 
-# todo-txt
-alias t="todo.sh"
-alias todos="$VISUAL $HOME/Desktop/todo.txt"
+alias vz="nvim $HOME/.config/zsh/.zshrc"
+alias sz="exec zsh"
+alias ne="neofetch"
+alias auth="kinit liuguangtian.1024@BYTEDANCE.COM"
+alias devbox="ssh liuguangtian.1024@10.37.108.27"
+alias ls="eza"
 
 # vim: ft=zsh sw=2 ts=2 et

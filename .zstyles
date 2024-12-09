@@ -32,7 +32,7 @@ zstyle ':zephyr:plugin:*' 'use-cache' yes
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':zephyr:plugin:editor' key-bindings 'vi'
+zstyle ':zephyr:plugin:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 zstyle ':zephyr:plugin:editor' dot-expansion 'yes'
